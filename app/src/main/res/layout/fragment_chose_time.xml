@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ChoseTime"
+    android:layout_marginTop="-10dp"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow
+            >
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/spnDay"
+                android:layout_width="80dp"
+                android:layout_marginTop="10dp"
+                >
+            </Spinner>
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:id="@+id/spnTime"
+                android:layout_marginTop="10dp"
+                ></Spinner>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/abc_ic_clear_search_api_holo_light"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-25dp"
+                android:onClick="CancelChoseTime"
+                />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

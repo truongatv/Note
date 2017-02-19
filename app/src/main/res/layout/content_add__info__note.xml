@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rlAddNote"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.atv.note.Add_Info_Note"
+    tools:showIn="@layout/activity_add__info__note">
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:id="@+id/image"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@+id/image"
+        android:textColor="@color/colorText"
+        android:id="@+id/tvTimeCreate"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTimeCreate"
+        android:id="@+id/edtTitle"
+        android:textStyle="bold"
+        android:hint="Title"
+        android:textSize="@dimen/text_size_title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNote"
+        android:hint="Node"
+        android:layout_below="@+id/edtTitle"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNote">
+            <ImageView
+                android:src="@drawable/ic_action_alarms_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imvAlarm"
+                />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:text="Alarm"
+                android:id="@+id/tvAlarm"
+                android:onClick="ShowTime"
+                android:layout_toRightOf="@+id/imvAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                />
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="layout.ChoseTime"
+                android:id="@+id/fragment"
+                android:layout_toRightOf="@+id/imvAlarm"
+                tools:layout="@layout/fragment_chose_time"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-5dp"
+                />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/control"
+        android:id="@+id/lnControl"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_action_share"
+            android:layout_weight="1"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/imShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_discard"
+            android:layout_width="wrap_content"
+            android:id="@+id/imDelete"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_previous_item_hide"
+            android:id="@+id/imBackHide"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action_next_item_hide"
+            android:id="@+id/imNextHide"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_previous_item"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/imBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_next_item"
+            android:id="@+id/imNext"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.atv.note.MainActivity">
+    <item
+        android:id="@+id/Add_Note"
+        android:icon="@drawable/ic_action_new"
+        android:title="addNote"
+        app:showAsAction="ifRoom"/>
+</menu>

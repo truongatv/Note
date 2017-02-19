@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Insert Picture"
+        android:textColor="@color/colorTitel"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_title"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="2dp"
+        android:background="@color/colorTitel"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
+        <TableRow
+            android:id="@+id/tbrTakePhoto">
+            <ImageView
+                android:src="@drawable/ic_action_camera_dark"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:text="Take Photo"
+                android:layout_marginTop="30dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbrChoosePicture">
+            <ImageView
+                android:src="@drawable/ic_action_picture"
+
+                />
+            <TextView
+                android:text="Choose Photo"
+                android:layout_marginTop="18dp"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

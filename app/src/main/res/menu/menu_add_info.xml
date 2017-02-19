@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.atv.note.Add_Info_Note">
+    <item
+        android:id="@+id/Add_Camera"
+        android:icon="@drawable/ic_action_camera"
+        android:title="addCamera"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/Add_Color"
+        android:icon="@drawable/ic_action_view_as_grid"
+        android:title="addColor"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/Done"
+        android:icon="@drawable/ic_action_accept"
+        android:title="Done"
+        app:showAsAction="ifRoom"/>
+</menu>
